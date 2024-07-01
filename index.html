@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="icon" href="imagens/criptograf.png">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <div class="entrada">
+            <label for="entrada__texto"> </label>
+            <textarea class="entrada__texto" name="entrada" rows="10" cols="30" placeholder="digite o texto a ser processado" spellcheck="false"></textarea>
+            <p class="entrada__descricao"><img class="imagem__alerta" src="imagens/aviso.png" alt="imagem alerta">&emsp;apenas letras minúsculas e sem acento</p>
+            <div class="entrada__botoes">
+                <button class="botao" onclick="criptografa()" >Criptografar </button>
+                <button class="botao" onclick="descriptografa()" >Descriptografar</button>
+            </div>
+        </div>
+        <div class="saida__antes">
+            <label for="saida__texto"> </label>
+            <img class="saida__img" src="imagens/criptografia-de-dados.png" alt="imagem de um cadeado">
+            <div>
+                <h2 class="saida__titulo">Nenhuma mensagem Encontrada</h2>
+                <p class="saida__parag"> &emsp; Digite a mensagem que você quer descriptografar ou criptografar na caixa de texto ao lado</p>
+            </div>
+        </div>
+        <div class="saida__depois">
+            <label for="saida__texto"> </label>
+            <textarea class="saida__texto" name="entrada" rows="10" cols="30" placeholder="digite o texto a ser processado" readonly></textarea>
+            <button class="botao" onclick="copiaTexto()">Copiar </button>
+        </div>
+
+    </main>
+    <footer>
+        Desenvolvido por Louie
+    </footer>
+    <script src="scripts/script.js"></script>
+    
+</body>
+</html>
